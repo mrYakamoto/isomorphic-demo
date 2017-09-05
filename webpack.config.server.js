@@ -22,7 +22,7 @@ module.exports = {
                 exclude: [/node_modules/],
                 use: [{
                     loader: 'babel-loader',
-                    options: { presets: ['es2015', 'react'], plugins: ['transform-object-rest-spread'] }
+                    options: { presets: ['es2015', 'react'], plugins: ['transform-object-rest-spread', 'async-to-promises'] }
                 }],
             }
             //loaders for other file types can go here
